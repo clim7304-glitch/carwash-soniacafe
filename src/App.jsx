@@ -1129,12 +1129,10 @@ export default function App() {
                       <div>
                         <p>Nama Kasir</p>
                         <div className="h-6"></div>
-                        <p className="border-t border-black font-bold">(......................)</p>
                       </div>
                       <div>
-                        <p>Perwakilan Operator</p>
+                        <p>Tanda Tangan</p>
                         <div className="h-6"></div>
-                        <p className="border-t border-black font-bold">(......................)</p>
                       </div>
                     </div>
                   </div>
@@ -1327,12 +1325,10 @@ export default function App() {
                   <div>
                     <p>Nama Kasir</p>
                     <div className="h-6"></div>
-                    <p className="border-t border-black font-bold">(......................)</p>
                   </div>
                   <div>
-                    <p>Perwakilan Operator</p>
+                    <p>Tanda Tangan</p>
                     <div className="h-6"></div>
-                    <p className="border-t border-black font-bold">(......................)</p>
                   </div>
                 </div>
               </div>
