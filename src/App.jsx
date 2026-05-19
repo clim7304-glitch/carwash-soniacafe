@@ -431,7 +431,7 @@ export default function App() {
                   <label className="text-xs font-semibold text-stone-400 mb-1 block">Nama Pelanggan</label>
                   <input 
                     type="text" 
-                    placeholder="Contoh: Andi Santoso" 
+                    placeholder="Contoh: Ridho Juragan Cinta" 
                     required 
                     value={formData.nama} 
                     onChange={e => setFormData({...formData, nama: e.target.value})} 
