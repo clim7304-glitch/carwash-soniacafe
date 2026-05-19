@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-// Anggota Tetap & Komisi Gaji per Mobil (Sistem Normal)
+// Anggota Tetap & Komisi Gaji per Mobil (Sistem Rata Semua Dapat Gaji)
 const OPERATORS = [
   { id: 'aci_evi', nama: 'Aci Evi', tarif: 5000 },
   { id: 'bang_tomy', nama: 'Bang Tomy', tarif: 5000 },
@@ -707,6 +707,7 @@ export default function App() {
                 <table className="w-full text-left border-collapse">
                   <thead>
                     <tr className="border-b border-stone-800 text-stone-400 text-xs font-semibold uppercase tracking-wider">
+                      <th className="p-3 w-10 text-center">No</th>
                       <th className="p-3">Tanggal / ID</th>
                       <th className="p-3">Pelanggan</th>
                       <th className="p-3">Kendaraan / Plat</th>
@@ -718,14 +719,17 @@ export default function App() {
                   <tbody className="divide-y divide-stone-800/30">
                     {filteredTransactions.length === 0 ? (
                       <tr>
-                        <td colSpan="6" className="p-12 text-center text-stone-500">
+                        <td colSpan="7" className="p-12 text-center text-stone-500">
                           <p className="text-4xl mb-3">☕</p>
                           <p className="text-sm font-medium">Lounge santai. Belum ada antrean kendaraan terdaftar.</p>
                         </td>
                       </tr>
                     ) : (
-                      filteredTransactions.map((t) => (
+                      filteredTransactions.map((t, index) => (
                         <tr key={t.id} className="hover:bg-stone-800/30 transition-colors group">
+                          <td className="p-3 text-center text-xs font-bold text-stone-500">
+                            {index + 1}
+                          </td>
                           <td className="p-3 text-xs font-mono text-stone-500">
                             <div>{t.tanggal}</div>
                             <div className="text-[10px] font-bold text-amber-500">{t.id}</div>
@@ -1125,10 +1129,12 @@ export default function App() {
                       <div>
                         <p>Nama Kasir</p>
                         <div className="h-6"></div>
+                        <p className="border-t border-black font-bold">(......................)</p>
                       </div>
                       <div>
-                        <p>Tanda Tangan</p>
+                        <p>Perwakilan Operator</p>
                         <div className="h-6"></div>
+                        <p className="border-t border-black font-bold">(......................)</p>
                       </div>
                     </div>
                   </div>
@@ -1311,16 +1317,22 @@ export default function App() {
                   <span>{formatRupiah(printModal.data.labaOwner)}</span>
                 </div>
 
+                <div className="flex justify-between font-bold text-[11px]">
+                      <span>GAJI ACI EVI:</span>
+                    </div>
+
                 <div className="border-t border-dashed border-black my-3"></div>
 
                 <div className="grid grid-cols-2 text-center text-[9px] gap-2 mt-2">
                   <div>
                     <p>Nama Kasir</p>
                     <div className="h-6"></div>
+                    <p className="border-t border-black font-bold">(......................)</p>
                   </div>
                   <div>
                     <p>Perwakilan Operator</p>
                     <div className="h-6"></div>
+                    <p className="border-t border-black font-bold">(......................)</p>
                   </div>
                 </div>
               </div>
