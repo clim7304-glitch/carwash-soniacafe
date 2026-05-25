@@ -5,7 +5,7 @@ const OPERATORS = [
   { id: 'aci_evi', nama: 'Aci Evi', tarif: 5000 },
   { id: 'bang_tomy', nama: 'Bang Tomy', tarif: 5000 },
   { id: 'gilang', nama: 'Gilang', tarif: 3500 },
-  { id: 'febri', nama: 'Febri', tarif: 3500 },
+  { id: 'syahril', nama: 'Syahril', tarif: 3500 },
   { id: 'febi', nama: 'Febi', tarif: 3500 }
 ];
 
