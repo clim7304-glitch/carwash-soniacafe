@@ -4,9 +4,9 @@ import React, { useState, useEffect } from 'react';
 const OPERATORS = [
   { id: 'aci_evi', nama: 'Aci Evi', tarif: 5000 },
   { id: 'bang_tomy', nama: 'Bang Tomy', tarif: 5000 },
-  { id: 'gilang', nama: 'Gilang', tarif: 3500 },
-  { id: 'syahril', nama: 'Syahril', tarif: 3500 },
-  { id: 'febi', nama: 'Febi', tarif: 3500 }
+  { id: 'rohim_hitam', nama: 'Rohim Hitam', tarif: 4000 },
+  { id: 'dayat_jelek', nama: 'Dayat Kecap Bangau', tarif: 3500 },
+  { id: 'Om_Dayat', nama: 'Om Dayat', tarif: 3500 }
 ];
 
 export default function App() {
