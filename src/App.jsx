@@ -6,7 +6,7 @@ const OPERATORS = [
   { id: 'bang_tomy', nama: 'Bang Tomy', tarif: 5000 },
   { id: 'rohim_hitam', nama: 'Rohim Hitam', tarif: 4000 },
   { id: 'dayat_jelek', nama: 'Dayat Kecap Bangau', tarif: 3500 },
-  { id: 'Om_Dayat', nama: 'Om Dayat', tarif: 3500 }
+  { id: 'usop_dongo', nama: 'Usop Long Or', tarif: 4000 }
 ];
 
 export default function App() {
